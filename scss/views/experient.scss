@@ -1,0 +1,180 @@
+.main {
+	height: 100vh;
+	width: 100%;
+
+	h1 {
+		width: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+		opacity: 1.0;
+		transition: opacity 500ms ease-in;
+	}
+
+	.carousel {
+		height: 100vh;
+		position: relative;
+
+		li {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			list-style: none;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			z-index: 7;
+
+			&.ondeck {
+				z-index: 8;
+			}
+
+			&.active {
+				z-index: 9;
+			}
+		}
+	}
+}
+
+.content-section {
+	height: auto;
+
+	.logo {
+		height: 200px;
+		width: 100%;
+		text-align: center;
+
+		img {
+			padding: 50px 0;
+		}
+	}
+
+	.content {
+		height: auto;
+		width: 100%;
+		background-color: #7895a3;
+		color: white;
+
+		p {
+			width: 80%;
+			height: auto;
+			padding: 55px 0;
+			margin: 0 auto;
+			font-size: 18px;
+
+			.heading {
+				font-size: 26px;
+			}
+		}
+	}
+}
+
+.process {
+	&.content-section .content {
+		background-color: #00aeef;
+	}
+}
+
+.client {
+	&.content-section .content {
+		background-color: #9fd0cb;
+	}
+}
+
+.team-anita, .team-pedro {
+	height: auto;
+
+	.logo {
+		height: 200px;
+		width: 100%;
+		text-align: center;
+
+		img {
+			padding: 50px 0;
+		}
+	}
+
+	.content {
+		background-color: #6a747c;
+		color: white;
+		display: flex;
+		height: auto;
+		padding: 55px;
+		font-size: 18px;
+
+		.photo {
+		  width: 531px;
+
+		  p.title {
+			width: 100%;
+    		padding: 50px 0 0 0;
+		  }
+		}
+
+		p.description {
+			width: 45%;
+			height: auto;
+			margin: 0 0 0 55px;
+		}
+	}
+}
+
+ .team-pedro {
+	.content {
+		background-color: #7895a3;
+	}
+ }
+
+
+@media screen and (max-width: 800px) {
+	.team-anita, .team-pedro {
+		.content {
+			display: block;
+
+			.photo {
+				width: 100%;
+			}
+
+			p.description {
+				width: 100%;
+				margin-left: 0px;
+			}
+		}
+	}
+}
+
+img {
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+    height: auto;
+}
+
+.gotham-light {
+	font-family: "Gotham SSm A", "Gotham SSm B";
+	font-style: normal;
+	font-weight: 300;
+}
+
+.gotham-book {
+	font-family: "Gotham SSm A", "Gotham SSm B";
+	font-style: normal;
+	font-weight: 400;
+}
+
+.gotham-medium {
+	font-family: "Gotham SSm A", "Gotham SSm B";
+	font-style: normal;
+	font-weight: 500;
+}
+
+.gotham-bold {
+	font-family: "Gotham SSm A", "Gotham SSm B";
+	font-style: normal;
+	font-weight: 700;
+}
