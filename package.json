@@ -1,0 +1,22 @@
+{
+  "name": "html-app-for-su",
+  "version": "1.0.0",
+  "description": "HTML app for singularity university portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/*.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "node index.js"
+  },
+  "author": "Raj koppola",
+  "license": "ISC",
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "node-sass": "^4.5.1",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
