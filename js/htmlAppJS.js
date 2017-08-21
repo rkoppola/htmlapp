@@ -6,6 +6,10 @@ main.Global = {
         var $b = $("body");
         var $w = $(window);
 
+        var servicesHeight = $('.services .content').height();
+        $(".process .content").height(servicesHeight);
+        $(".client .content").height(servicesHeight);
+
         setInterval(function() {
             main.Global.ChangeSlides();
         }, 5000);
@@ -54,6 +58,12 @@ main.Global = {
             e.preventDefault();
 
             $(".navigation").removeClass("show-privacy show-copyright");
+        });
+
+        $(window).resize(function() {
+            var servicesHeight = $('.services .content').height();
+            $(".process .content").height(servicesHeight);
+            $(".client .content").height(servicesHeight);
         });
 
         $(".main-nav a").on("click", function(e) {

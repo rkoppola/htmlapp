@@ -59,7 +59,8 @@
     .wrapper .navigation a {
       color: #fff;
       padding: 5px 0;
-      display: block; }
+      display: block;
+      text-decoration: none; }
       .wrapper .navigation a:hover {
         color: #00aeef; }
     .wrapper .navigation .wrapper {
@@ -82,7 +83,8 @@
             color: #807c7c;
             padding: 5px 0;
             display: block;
-            font-size: 14px; }
+            font-size: 14px;
+            text-decoration: none; }
             .wrapper .navigation .wrapper .sub-nav li a:hover {
               color: #00aeef; }
       .wrapper .navigation .wrapper .scroll-down {
@@ -236,6 +238,9 @@ button.back-to-top {
   outline: 0;
   cursor: pointer;
   text-transform: uppercase; }
+  button.back-to-top img {
+    width: 30%;
+    padding-top: 2px; }
   button.back-to-top span {
     display: block;
     margin-top: 10px; }
@@ -244,6 +249,9 @@ button.back-to-top {
 
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+body {
+  margin: 0; }
+
 .main {
   height: 100vh;
   width: 100%; }
@@ -298,10 +306,22 @@ button.back-to-top {
         font-size: 26px; }
 
 .process.content-section .content {
-  background-color: #00aeef; }
+  background-color: #00aeef;
+  display: table-cell;
+  vertical-align: middle; }
+  .process.content-section .content p {
+    font-size: 28px; }
+    .process.content-section .content p .heading {
+      font-size: 36px; }
 
 .client.content-section .content {
-  background-color: #9fd0cb; }
+  background-color: #9fd0cb;
+  display: table-cell;
+  vertical-align: middle; }
+  .client.content-section .content p {
+    font-size: 28px; }
+    .client.content-section .content p .heading {
+      font-size: 36px; }
 
 .team-anita, .team-pedro {
   height: auto; }
@@ -319,12 +339,12 @@ button.back-to-top {
     padding: 55px;
     font-size: 18px; }
     .team-anita .content .photo, .team-pedro .content .photo {
-      width: 531px; }
+      width: 396px; }
       .team-anita .content .photo p.title, .team-pedro .content .photo p.title {
         width: 100%;
-        padding: 50px 0 0 0; }
+        padding: 0; }
     .team-anita .content p.description, .team-pedro .content p.description {
-      width: 45%;
+      width: 50%;
       height: auto;
       margin: 0 0 0 55px; }
 
@@ -332,10 +352,13 @@ button.back-to-top {
   background-color: #7895a3; }
 
 @media screen and (max-width: 800px) {
+  .main h1 {
+    width: 80%; }
   .team-anita .content, .team-pedro .content {
     display: block; }
     .team-anita .content .photo, .team-pedro .content .photo {
-      width: 100%; }
+      width: 100%;
+      max-width: 396px; }
     .team-anita .content p.description, .team-pedro .content p.description {
       width: 100%;
       margin-left: 0px; } }

@@ -1,3 +1,7 @@
+body{
+	margin: 0;
+}
+
 .main {
 	height: 100vh;
 	width: 100%;
@@ -76,12 +80,32 @@
 .process {
 	&.content-section .content {
 		background-color: #00aeef;
+		display: table-cell;
+		vertical-align: middle;
+
+		p {
+			font-size: 28px;
+
+			.heading {
+				font-size: 36px;
+			}
+		}
 	}
 }
 
 .client {
 	&.content-section .content {
 		background-color: #9fd0cb;
+		display: table-cell;
+		vertical-align: middle;
+
+		p {
+			font-size: 28px;
+
+			.heading {
+				font-size: 36px;
+			}
+		}
 	}
 }
 
@@ -107,16 +131,16 @@
 		font-size: 18px;
 
 		.photo {
-		  width: 531px;
+		  width: 396px;
 
 		  p.title {
 			width: 100%;
-    		padding: 50px 0 0 0;
+    		padding: 0;
 		  }
 		}
 
 		p.description {
-			width: 45%;
+			width: 50%;
 			height: auto;
 			margin: 0 0 0 55px;
 		}
@@ -131,12 +155,19 @@
 
 
 @media screen and (max-width: 800px) {
+	.main {
+		h1 {
+			width: 80%;
+		}
+	}
+
 	.team-anita, .team-pedro {
 		.content {
 			display: block;
 
 			.photo {
 				width: 100%;
+				max-width: 396px;
 			}
 
 			p.description {
