@@ -77,9 +77,14 @@ main.Global = {
             window.location.hash = link;
         });
 
-        $(".sub-nav scrollDown").on("click", function(e) {
+        $(".scrollDown").on("click", function(e) {
             e.preventDefault();
             var link = $(this).attr("href").replace("#", "");
+
+            if (window.location.hash === "#" + link) {
+                main.Global.ScrollToHash(link);
+                return;
+            }
             window.location.hash = link;
         });
 

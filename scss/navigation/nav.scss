@@ -15,7 +15,7 @@
 		width: 30px;
 		position: absolute;
     	right: 5%;
-    	z-index: 10;
+    	z-index: 12;
 
 		&::before {
 			content: "";
@@ -99,7 +99,7 @@
 					line-height: 14px;
 
 					a {
-						color: #807c7c;
+						color: #fff;
 						padding: 5px 0;
 						display: block;
 						font-size: 14px;
@@ -110,13 +110,6 @@
 						}
 					}
 				}
-			}
-
-			.scroll-down {
-				width: 100%;
-				text-align: center;
-				position: absolute;
-				top: -50%;
 			}
 
 		}
@@ -228,14 +221,6 @@
 			display: block;
 
 			.main-nav {
-				svg {
-					width: 30px;
-					height: 30px;
-					fill: #fff;
-					margin-right: 5px;
-					transition: fill 200ms ease-in;
-				}
-
 				.logo {
 					padding: 50px 0;
 				}
