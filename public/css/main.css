@@ -162,7 +162,7 @@
   .nav-open .navigation .wrapper {
     display: block; }
     .nav-open .navigation .wrapper .main-nav .logo {
-      padding: 50px 0; }
+      padding: 100px 0 50px 0; }
     .nav-open .navigation .wrapper .sub-nav {
       top: 70%;
       transition: top 750ms cubic-bezier(0.97, 0.19, 0.75, 0.99) 500ms; }
@@ -314,7 +314,7 @@ body {
       margin: 0 auto;
       font-size: 18px; }
       .content-section .content p .heading {
-        font-size: 26px; }
+        font-size: 36px; }
 
 .process.content-section .content {
   background-color: #00aeef;
