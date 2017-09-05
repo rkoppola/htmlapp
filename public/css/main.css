@@ -354,6 +354,11 @@ body {
       .team-anita .content .photo p.title, .team-pedro .content .photo p.title {
         width: 100%;
         padding: 0; }
+        .team-anita .content .photo p.title a, .team-pedro .content .photo p.title a {
+          color: #fff;
+          text-decoration: none; }
+          .team-anita .content .photo p.title a:hover, .team-pedro .content .photo p.title a:hover {
+            color: #00aeef; }
     .team-anita .content p.description, .team-pedro .content p.description {
       width: 50%;
       height: auto;

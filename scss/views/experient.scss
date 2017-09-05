@@ -165,7 +165,16 @@ body{
 
 		  p.title {
 			width: 100%;
-    		padding: 0;
+			padding: 0;
+
+			a {
+				color: #fff;
+				text-decoration: none;
+
+				&:hover {
+					  color: #00aeef;
+				}
+			}
 		  }
 		}
 
